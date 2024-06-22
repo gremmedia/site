@@ -1,0 +1,27 @@
+---
+title: 'About'
+button: 'About us'
+weight: 2
+---
+<section class="section about-us py-5">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 text-start">
+        <h2 class="fs-1 text-dark">About <b class="text-primary">Grem Media LLC</b></h2>
+      </div>
+      <div class="col-12 col-lg-8 text-start pb-2">
+        <p class="text-dark-50">
+          Grem Media LLC specializes in creating technical education content for businesses and individuals. Since 2016, we have created courses for universities, consumers, and internal enablement.
+        </p>
+        <p class="text-dark-50">
+          We've created courses on:
+        </p>
+        <ul class="list-unstyled text-dark-75 ps-3">
+          <li class="pb-1">Software Engineering</li>
+          <li class="pb-1">DevOps and Cloud Computing</li>
+          <li class="pb-1">Go, TypeScript, and C#</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+enabled: true
+id: "courses"
+
+content:
+  title: "We've made courses on topics such as: "
+  names:
+    - "DevOps"
+    - "Cloud Computing"
+    - "Monitoring"
+    - "Golang"
+    - "TypeScript"
+    - "Computer Science"
+    - "Agile"

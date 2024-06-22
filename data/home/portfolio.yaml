@@ -1,0 +1,41 @@
+enabled: true
+id: "portfolio"
+
+content:
+  description: "Grem Media LLC specializes in creating technical education content for businesses and individuals. Since 2016, we have created courses for universities, consumers, and internal enablement."
+  projects:
+    - image: "images/portfolio-ecommerce.png"
+      pretitle: "Portfolio Service"
+      title: "We developed an eCommerce website"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+      buttons: 
+        - label: "See live"
+          url: "#"
+
+        - label: "Read more"
+          url: "#"
+
+    - image: "images/portfolio-ecommerce.png"
+      pretitle: "Portfolio Service"
+      title: "We developed an eCommerce website"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+      buttons: 
+        - label: "See live"
+          url: "#"
+
+        - label: "Read more"
+          url: "#"
+
+    - image: "images/portfolio-ecommerce.png"
+      pretitle: "Portfolio Service"
+      title: "We developed an eCommerce website"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+      buttons: 
+        - label: "See live"
+          url: "#"
+
+        - label: "Read more"
+          url: "#"

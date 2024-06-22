@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Grem Media LLC</title>
+    <link>http://localhost:1313/services/</link>
+    <description>Recent content in Services on Grem Media LLC</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consulting</title>
+      <link>http://localhost:1313/services/consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/consulting/</guid>
+      <description>Consulting We offer consulting services to help you implement best practices in course development, instructional design, and internal enablement.</description>
+    </item>
+    <item>
+      <title>Course Development</title>
+      <link>http://localhost:1313/services/course-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/course-development/</guid>
+      <description>Course Development We develop comprehensive and engaging technical courses tailored to your needs.</description>
+    </item>
+    <item>
+      <title>Technical Writing</title>
+      <link>http://localhost:1313/services/technical-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/technical-writing/</guid>
+      <description>Technical Writing Our technical writing services include documentation, manuals, and tutorials to help your audience understand complex topics.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "Our experts have made courses for: "
+  items:
+    - item:
+        name: "Codecademy"
+        link: "https://www.codecademy.com/"
+    - item:
+        name: "Datadog"
+        link: "https://www.datadoghq.com/"
+    - item:
+        name: "Skillsoft"
+        link: "https://www.skillsoft.com/"
+    - item:
+        name: "CSUCI"
+        link: "https://www.csuci.edu/"

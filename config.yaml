@@ -1,0 +1,46 @@
+baseURL: "https://www.gremmedia.com/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "Grem Media LLC"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "Grem Media LLC"
+  description: "We help you teach tech"
+  images: 
+    - "images/hero-image.png"
+
+  logo: "arrow-up.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  contact:
+    - "requests@gremmedia.com"
+
+  copyright: "© 2024 Grem Media LLC All Rights Reserved"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Sample"
+      url: "/portfolio/"
+      weight: 4
+    - name: "Blog"
+      url: "/blog/"
+      weight: 5
+    - name: "Contact Us"
+      url: "mailto:requests@gremmedia.com"
+      weight: 6
+      pre: "btn btn-primary text-light"
+taxonomies:
+  series: "series"
+  tags: "tags"

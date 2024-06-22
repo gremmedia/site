@@ -1,0 +1,7 @@
+enabled: true
+id: "hero"
+
+content:
+  pretitle: "We create"
+  boldtitle: "technical education content"
+  posttitle: "for businesses and individuals"

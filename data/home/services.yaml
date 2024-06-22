@@ -1,0 +1,27 @@
+enabled: true
+id: "services"
+
+content:
+  title: "We help you teach"
+  text: "High-quality technical education for businesses and individuals"
+  cards:
+    - image: "images/brands-google.png"
+      title: "Course Content"
+      list: 
+      - "Workshops"
+      - "Assessments"
+      - "Lessons"
+
+    - image: "images/brands-google.png"
+      title: "Technical Writing"
+      list: 
+      - "Documentation"
+      - "Guides"
+      - "Articles"
+
+    - image: "images/brands-google.png"
+      title: "Consulting"
+      list:
+      - "Practices"
+      - "Design"
+      - "Processes"
