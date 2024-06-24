@@ -32,7 +32,7 @@ menus:
       url: "/"
       weight: 1
     - name: "Sample"
-      url: "/portfolio/"
+      url: "/courses/"
       weight: 4
     - name: "Blog"
       url: "/blog/"

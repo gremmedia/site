@@ -1,0 +1,6 @@
+<article class="part">
+    <h1>{{ .Title }}</h1>
+    {{ range .Params.content_sections }}
+        {{ partial (printf "content/%s.html" .type) . }}
+    {{ end }}
+</article>

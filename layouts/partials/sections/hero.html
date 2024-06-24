@@ -1,0 +1,24 @@
+<section class="section hero m-4 mb-0">
+    <div class="container">
+      <div class="row">
+        {{ with .content }}
+          <div class="col-12 text-start">
+            <h1 class="fs-3 text-dark">
+                {{ with .pretitle }} {{.}}{{end}}
+            <b class="text-primary">
+                {{ with .boldtitle }}
+                    {{ . }}
+                {{ end }}
+            </b>
+            {{ with .posttitle }} {{.}} {{end}}
+        </h1>
+          </div>
+        {{ end }}
+        {{ with .content.text }}
+          <div class="fs-4 col-12 text-start pb-2">
+            <p class="text-dark-50">{{ . }}</p>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+</section>

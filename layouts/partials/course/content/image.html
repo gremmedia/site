@@ -1,0 +1,8 @@
+<section class="content image">
+    <figure class="figure">
+        <img src="{{ .src }}" alt="{{ .alt }}" class="figure-img img-fluid rounded">
+        {{ with .caption }}
+            <figcaption class="figure-caption">{{ . }}</figcaption>
+        {{ end }}
+    </figure>
+</section>

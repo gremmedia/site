@@ -1,0 +1,37 @@
+<section class="section portfolio py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-start">
+        <h2 class="fs-2 text-dark">Our <b class="text-primary">Portfolio</b></h2>
+      </div>
+      <div class="col-12 col-lg-8 text-start pb-2">
+        <p class="text-dark-50">
+          Our experts have been creating courses for universities, consumers, and internal enablement since 2016.
+        </p>
+      </div>
+    </div>
+    <div class="row g-3">
+      {{ range .content.projects }}
+        <div class="col-12">
+          <div class="card bg-white border border-primary rounded-3 shadow-sm">
+            <div class="row g-0">
+              <div class="col-4">
+                {{ with .image }}<img src="{{ . }}" class="img-fluid rounded-start" alt="Portfolio project">{{ end }}
+              </div>
+              <div class="col-8">
+                <div class="card-body d-flex flex-column text-start p-3">
+                  {{ with .title }}<h4 class="card-title text-primary fw-bold">{{ . }}</h4>{{ end }}
+                  <div class="mt-auto">
+                    {{ range .buttons }}
+                      <a class="btn btn-outline-primary me-2 mb-2" href="{{ .url }}">{{ .label }}</a>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

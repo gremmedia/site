@@ -6,14 +6,28 @@
     <description>Recent content on Grem Media LLC</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2024 10:41:08 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Addition, Subtraction, Multiplication, and Division</title>
+      <link>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/01-add-subtract-multiply-divide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/01-add-subtract-multiply-divide/</guid>
+      <description></description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description> </description>
+    </item>
+    <item>
+      <title>Project2</title>
+      <link>http://localhost:1313/portfolio/project2/</link>
+      <pubDate>Sat, 15 Jun 2024 10:41:08 -0700</pubDate>
+      <guid>http://localhost:1313/portfolio/project2/</guid>
+      <description>Other</description>
     </item>
     <item>
       <title>Rich Content</title>
@@ -44,25 +58,11 @@
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Consulting</title>
-      <link>http://localhost:1313/services/consulting/</link>
+      <title>Data Types</title>
+      <link>http://localhost:1313/portfolio/data_types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/consulting/</guid>
-      <description>Consulting We offer consulting services to help you implement best practices in course development, instructional design, and internal enablement.</description>
-    </item>
-    <item>
-      <title>Course Development</title>
-      <link>http://localhost:1313/services/course-development/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/course-development/</guid>
-      <description>Course Development We develop comprehensive and engaging technical courses tailored to your needs.</description>
-    </item>
-    <item>
-      <title>Technical Writing</title>
-      <link>http://localhost:1313/services/technical-writing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/technical-writing/</guid>
-      <description>Technical Writing Our technical writing services include documentation, manuals, and tutorials to help your audience understand complex topics.</description>
+      <guid>http://localhost:1313/portfolio/data_types/</guid>
+      <description>Introduction In this segment we will discuss:&#xA;the different types of variables we can use in our program how to create and use them This will allow us to create programs with a wide variety of calculation options.</description>
     </item>
   </channel>
 </rss>

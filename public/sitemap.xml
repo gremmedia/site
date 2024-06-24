@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/01-add-subtract-multiply-divide/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/c-expressions-and-operators/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/</loc>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
+    <loc>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-15T10:41:08-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/index/</loc>
     <lastmod>2024-06-15T10:41:08-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
     <lastmod>2024-06-15T10:41:08-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/index/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/portfolio/project2/</loc>
+    <lastmod>2024-06-15T10:41:08-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-06-15T10:41:08-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
@@ -23,9 +37,6 @@
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/markdown/</loc>
@@ -46,14 +57,10 @@
     <loc>http://localhost:1313/post/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/services/consulting/</loc>
+    <loc>http://localhost:1313/tags/c/</loc>
   </url><url>
-    <loc>http://localhost:1313/services/course-development/</loc>
+    <loc>http://localhost:1313/portfolio/data_types/</loc>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
-  </url><url>
-    <loc>http://localhost:1313/services/</loc>
-  </url><url>
-    <loc>http://localhost:1313/services/technical-writing/</loc>
   </url>
 </urlset>

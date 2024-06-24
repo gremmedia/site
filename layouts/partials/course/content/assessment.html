@@ -1,0 +1,29 @@
+<section class="content assessment">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="mb-0">{{ .title }}</h2>
+        </div>
+        <div class="card-body">
+            <form>
+                {{ range .questions }}
+                    <div class="mb-3">
+                        <p class="fw-bold">{{ .question }}</p>
+                        {{ if eq .type "multiple-choice" }}
+                            {{ range .options }}
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q{{ $.index }}" id="q{{ $.index }}_{{ . }}" value="{{ . }}">
+                                    <label class="form-check-label" for="q{{ $.index }}_{{ . }}">
+                                        {{ . }}
+                                    </label>
+                                </div>
+                            {{ end }}
+                        {{ else if eq .type "short-answer" }}
+                            <textarea class="form-control" name="q{{ .index }}" rows="3"></textarea>
+                        {{ end }}
+                    </div>
+                {{ end }}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>

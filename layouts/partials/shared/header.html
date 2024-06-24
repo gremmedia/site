@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light py-3">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex justify-content-start mx-4" href="{{ .Site.BaseURL }}">
+      <span class="fs-2 fw-bold text-primary">{{ .Site.Title }}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        {{ range .Site.Menus.main }}
+          <li class="nav-item text-center">
+            {{ if eq .Name "Contact Us" }}
+            <a class="nav-link btn-primary text-light px-4" href="mailto:requests@gremmedia.com">{{ .Name }}</a>
+          {{ else }}
+            <a class="nav-link text-primary px-4" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}          
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

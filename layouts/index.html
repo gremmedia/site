@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="row h-100">
+  <div class="col-md-8 d-flex flex-column">
+    <div class="row flex-grow-1">
+      {{ with .Site.Data.home.hero }}
+      {{ partial "sections/hero.html" . }}
+      {{ end }}
+      {{ with .Site.Data.home.services }}{{ partial "sections/services.html" . }}{{ end }}
+      {{ with .Site.Data.home.brands }}
+      {{ partial "sections/brands.html" . }}
+      {{ end }}
+    </div> 
+  </div>
+  <div class="col-md-4 bg-primary">
+    {{ with .Site.Data.home.cta }}{{ partial "sections/cta.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}

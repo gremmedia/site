@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="lesson-overview">
+    <h1 class="mb-4">{{ .Title }}</h1>
+    
+    <!-- Lesson description -->
+    <div class="card mb-5">
+        <div class="card-body">
+            {{ .Content }}
+        </div>
+    </div>
+
+    <!-- List of parts -->
+    <h2 class="mb-3">Lesson Parts</h2>
+    <div class="list-group">
+        {{ range .Pages }}
+            <a href="{{ .Permalink }}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ .Title }}</h5>
+                    <!-- You can add more metadata here, like estimated duration -->
+                    <!-- <small>{{ .Params.duration }}</small> -->
+                </div>
+                <p class="mb-1">{{ .Summary }}</p>
+            </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

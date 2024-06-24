@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portfolios on Grem Media LLC</title>
+    <title>Introduction to C on Grem Media LLC</title>
     <link>http://localhost:1313/portfolio/</link>
-    <description>Recent content in Portfolios on Grem Media LLC</description>
+    <description>Recent content in Introduction to C on Grem Media LLC</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2024 10:41:08 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project2</title>
+      <link>http://localhost:1313/portfolio/project2/</link>
+      <pubDate>Sat, 15 Jun 2024 10:41:08 -0700</pubDate>
+      <guid>http://localhost:1313/portfolio/project2/</guid>
+      <description>Other</description>
+    </item>
+    <item>
+      <title>Data Types</title>
+      <link>http://localhost:1313/portfolio/data_types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/data_types/</guid>
+      <description>Introduction In this segment we will discuss:&#xA;the different types of variables we can use in our program how to create and use them This will allow us to create programs with a wide variety of calculation options.</description>
+    </item>
   </channel>
 </rss>

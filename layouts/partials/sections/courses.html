@@ -1,0 +1,20 @@
+<section class="section courses py-5">
+    <div class="container">
+      <div class="row">
+        {{ with .content.title }}
+          <div class="col-12">
+            <h2 class="fs-4 fw-semibold text-dark text-center pb-4">{{ . }}</h3>
+          </div>
+        {{ end }}
+      </div>
+      <div class="row align-items-center justify-content-center">
+        {{ range .content.items }}
+        <div class="fs-5 col px-3 my-2 text-center">
+          {{ with .name}}
+            <p class="fw-semibold">{{.}}</p>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>

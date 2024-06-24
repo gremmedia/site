@@ -1,0 +1,38 @@
+<nav id="sidebarMenu" class="d-md-block bg-light sidebar collapse">
+    <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+            {{ $currentPage := . }}
+            {{ range .Site.Sections }}
+                {{ if eq .Section "courses" }}
+                    <li class="nav-item">
+                        <a class="nav-link {{ if $currentPage.IsDescendant . }}active{{ end }}" href="{{ .RelPermalink }}">
+                            {{ .Title }}
+                        </a>
+                        {{ if $currentPage.IsDescendant . }}
+                            <ul class="nav flex-column ms-3">
+                                {{ range .Pages }}
+                                    <li class="nav-item">
+                                        <a class="nav-link {{ if $currentPage.IsDescendant . }}active{{ end }}" href="{{ .RelPermalink }}">
+                                            {{ .Title }}
+                                        </a>
+                                        {{ if $currentPage.IsDescendant . }}
+                                            <ul class="nav flex-column ms-3">
+                                                {{ range .Pages }}
+                                                    <li class="nav-item">
+                                                        <a class="nav-link {{ if eq $currentPage.Permalink .Permalink }}active{{ end }}" href="{{ .RelPermalink }}">
+                                                            {{ .Title }}
+                                                        </a>
+                                                    </li>
+                                                {{ end }}
+                                            </ul>
+                                        {{ end }}
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        {{ end }}
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+</nav>
