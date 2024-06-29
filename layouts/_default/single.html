@@ -1,25 +1,87 @@
 {{ define "main" }}
-  <section class="section blog-single py-5">
-    <div class="container">
-      <div class="row justify-content-center pb-5">
-        <div class="col-12">
-          {{ with .Title }}
-            <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
-          {{ end }}
-          {{ with .Params.description }}
-            <p class="text-black-61 text-center pb-3">{{ . }}</p>
-          {{ end }}
-        </div>
-      </div>
-      <div class="row pb-5">
-        <div class="col-12 d-flex justify-content-center">
-          <div class="blog-content fs-5">
-            {{ .Content }}
+<article class="single-post py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <header class="post-header text-center mb-5">
+          <h1 class="display-4 fw-bold text-primary mb-3">{{ .Title }}</h1>
+          <div class="post-meta text-muted mb-4">
+            <span class="me-3"><i class="far fa-calendar-alt me-2"></i>{{ .Date.Format "January 2, 2006" }}</span>
+            <span><i class="far fa-clock me-2"></i>{{ .ReadingTime }} min read</span>
           </div>
+          {{ with .Params.description }}
+            <p class="lead">{{ . }}</p>
+          {{ end }}
+        </header>
+
+        <div class="post-content">
+          {{ .Content }}
         </div>
-      </div>
-      <div class="row pb-5">
+
+        <footer class="post-footer mt-5 pt-4 border-top">
+          {{ with .Params.tags }}
+            <div class="post-tags mb-4">
+              {{ range . }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="btn btn-outline-primary btn-sm me-2 mb-2">{{ . }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+          
+          <div class="post-navigation d-flex justify-content-between">
+            {{ with .PrevInSection }}
+              <a href="{{ .Permalink }}" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-2"></i>Previous Post</a>
+            {{ end }}
+            {{ with .NextInSection }}
+              <a href="{{ .Permalink }}" class="btn btn-outline-primary">Next Post<i class="fas fa-arrow-right ms-2"></i></a>
+            {{ end }}
+          </div>
+        </footer>
       </div>
     </div>
-  </section>
+  </div>
+</article>
+
+<style>
+  :root {
+    --primary-color: #7E6BC4;
+    --primary-light: #F0EBFF;
+    --bg-color: #FAFAFA;
+  }
+  body {
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  .single-post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .post-content {
+    font-size: 1.1rem;
+  }
+  .post-content h2, .post-content h3 {
+    color: var(--primary-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+  }
+  .post-content p {
+    margin-bottom: 1.2em;
+  }
+  .post-content ul {
+    padding-left: 1.5em;
+    margin-bottom: 1.2em;
+  }
+  .post-content li {
+    margin-bottom: 0.5em;
+  }
+  .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+</style>
 {{ end }}

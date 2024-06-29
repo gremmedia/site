@@ -9,7 +9,7 @@ description: "A bit about Grem Media and its offerings"
 
 Hello and welcome to the Grem Media LLC blog! 
 
-At Grem Media, we specialize in creating engaging and comprehensive online courses. Our founder has years of experience in the industry, having developed courses at Datadog, Codecademy, and the California State University System. We've covered topics such as: 
+At Grem Media, we specialize in creating engaging and comprehensive online courses. Our founder has years of experience in the industry, and has covered topics such as: 
 
 - Software Engineering
 - DevOps
@@ -33,7 +33,6 @@ When you work with Grem Media LLC, you get:
 - **Expertise:** Our courses are created by professionals with hands-on experience.
 - **Quality:** We deliver content that is both informative and easy to understand.
 - **Flexibility:** Our services are tailored to meet your unique needs.
-- **Support:** We’re here to help you every step of the way, from course creation to implementation.
 
 ## Get in Touch
 

@@ -162,22 +162,23 @@
   </div>
 </nav>
 
-  <section class="section blog-single py-5">
-    <div class="container">
-      <div class="row justify-content-center pb-5">
-        <div class="col-12">
+<article class="single-post py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <header class="post-header text-center mb-5">
+          <h1 class="display-4 fw-bold text-primary mb-3">Welcome to Grem Media</h1>
+          <div class="post-meta text-muted mb-4">
+            <span class="me-3"><i class="far fa-calendar-alt me-2"></i>June 29, 2024</span>
+            <span><i class="far fa-clock me-2"></i>2 min read</span>
+          </div>
           
-            <h2 class="display-1 fw-bold text-center text-primary pb-3">Welcome to Grem Media</h2>
+            <p class="lead">A bit about Grem Media and its offerings</p>
           
-          
-            <p class="text-black-61 text-center pb-3">A bit about Grem Media and its offerings</p>
-          
-        </div>
-      </div>
-      <div class="row pb-5">
-        <div class="col-12 d-flex justify-content-center">
-          <div class="blog-content fs-5">
-            <h1 id="welcome-to-grem-media-llc">Welcome to Grem Media LLC!</h1>
+        </header>
+
+        <div class="post-content">
+          <h1 id="welcome-to-grem-media-llc">Welcome to Grem Media LLC!</h1>
 <p>Hello and welcome to the Grem Media LLC blog!</p>
 <p>At Grem Media, we specialize in creating engaging and comprehensive online courses. Our founder has years of experience in the industry, having developed courses at Datadog, Codecademy, and the California State University System. We&rsquo;ve covered topics such as:</p>
 <ul>
@@ -207,13 +208,68 @@
 <p>We’d love to hear from you! If you have any questions, need more information, or are ready to start a project, please reach out. You can contact us through our website or email us at <a href="mailto:contact@gremmedia.com">contact@gremmedia.com</a>.</p>
 <p>Stay tuned to our blog for updates, insights, and tips on various technical topics. Thanks for visiting Grem Media LLC – we’re excited to help you achieve your educational goals!</p>
 
-          </div>
         </div>
-      </div>
-      <div class="row pb-5">
+
+        <footer class="post-footer mt-5 pt-4 border-top">
+          
+          
+          <div class="post-navigation d-flex justify-content-between">
+            
+              <a href="http://localhost:1313/post/welcome/" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-2"></i>Previous Post</a>
+            
+            
+              <a href="http://localhost:1313/post/welcome-copy-2/" class="btn btn-outline-primary">Next Post<i class="fas fa-arrow-right ms-2"></i></a>
+            
+          </div>
+        </footer>
       </div>
     </div>
-  </section>
+  </div>
+</article>
+
+<style>
+  :root {
+    --primary-color: #7E6BC4;
+    --primary-light: #F0EBFF;
+    --bg-color: #FAFAFA;
+  }
+  body {
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  .single-post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .post-content {
+    font-size: 1.1rem;
+  }
+  .post-content h2, .post-content h3 {
+    color: var(--primary-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+  }
+  .post-content p {
+    margin-bottom: 1.2em;
+  }
+  .post-content ul {
+    padding-left: 1.5em;
+    margin-bottom: 1.2em;
+  }
+  .post-content li {
+    margin-bottom: 0.5em;
+  }
+  .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+</style>
 <footer class="shared footer bg-light">
   <div class="container">
     <div class="row pt-5">
