@@ -1,38 +1,23 @@
-<nav id="sidebarMenu" class="d-md-block bg-light sidebar collapse">
-    <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-            {{ $currentPage := . }}
-            {{ range .Site.Sections }}
-                {{ if eq .Section "courses" }}
-                    <li class="nav-item">
-                        <a class="nav-link {{ if $currentPage.IsDescendant . }}active{{ end }}" href="{{ .RelPermalink }}">
-                            {{ .Title }}
-                        </a>
-                        {{ if $currentPage.IsDescendant . }}
-                            <ul class="nav flex-column ms-3">
-                                {{ range .Pages }}
-                                    <li class="nav-item">
-                                        <a class="nav-link {{ if $currentPage.IsDescendant . }}active{{ end }}" href="{{ .RelPermalink }}">
-                                            {{ .Title }}
-                                        </a>
-                                        {{ if $currentPage.IsDescendant . }}
-                                            <ul class="nav flex-column ms-3">
-                                                {{ range .Pages }}
-                                                    <li class="nav-item">
-                                                        <a class="nav-link {{ if eq $currentPage.Permalink .Permalink }}active{{ end }}" href="{{ .RelPermalink }}">
-                                                            {{ .Title }}
-                                                        </a>
-                                                    </li>
-                                                {{ end }}
-                                            </ul>
-                                        {{ end }}
-                                    </li>
-                                {{ end }}
-                            </ul>
-                        {{ end }}
-                    </li>
-                {{ end }}
-            {{ end }}
-        </ul>
-    </div>
-</nav>
+<div class="sidebar" id="sidebar">
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle Sidebar">☰</button>
+    <nav id="course-content">
+      <h3 class="sidebar-heading">Navigate</h3>
+      <ul class="sidebar-nav">
+        {{ range $lesson := .Site.Sections }}
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="#" data-target="#lesson-{{ $lesson.File.UniqueID }}">
+              {{ $lesson.Title }}
+              <span class="dropdown-icon"></span>
+            </a>
+            <ul class="sidebar-submenu" id="lesson-{{ $lesson.File.UniqueID }}">
+              {{ range $lesson.Pages }}
+                <li class="sidebar-subitem {{ if eq .Permalink $.Permalink }}active{{ end }}">
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>

@@ -31,9 +31,6 @@ menus:
     - name: "Home"
       url: "/"
       weight: 1
-    - name: "Sample"
-      url: "/courses/"
-      weight: 4
     - name: "Blog"
       url: "/blog/"
       weight: 5
@@ -41,6 +38,3 @@ menus:
       url: "mailto:requests@gremmedia.com"
       weight: 6
       pre: "btn btn-primary text-light"
-taxonomies:
-  series: "series"
-  tags: "tags"

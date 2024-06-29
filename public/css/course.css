@@ -1,53 +1,69 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-.content {
-    max-width: 800px;
-    margin: 20px auto;
+.sidebar {
+    background-color: #7C76BB;
+    color: #fff;
     padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
-header, footer {
-    text-align: center;
+.sidebar-heading {
+    color: #fff;
     margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+#course-content .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 10px 0;
 }
 
-main h2, main h3 {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 5px;
+#course-content .list-group-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-pre, code {
-    background: #2d2d2d; /* dark background */
-    color: #cccccc; /* light text */
-    border: none; /* remove border */
-    padding: 10px; /* padding inside code blocks */
-    font-family: "Courier New", Courier, monospace;
-    overflow-x: auto;
-    display: block; /* ensures code blocks behave as blocks */
+#course-content .list-group-item a:hover {
+    text-decoration: underline;
 }
 
-pre {
-    margin: 20px 0;
-    border-radius: 5px; /* rounded corners */
+#course-content .collapse .list-group-item {
+    background-color: #7C76BB;
+    padding-left: 20px;
 }
 
-.tag {
-    background: #e0e0e0;
-    border-radius: 3px;
-    padding: 3px 6px;
-    margin-right: 5px;
-    display: inline-block;
+#course-content .list-group-item.active {
+    background-color: #4A47A3;
+    color: #fff;
+}
+
+#course-content .list-group-item.active a {
+    color: #fff;
+}
+
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h5 {
+    color: #7C76BB;
+}
+
+.content-section {
+    margin-top: 20px;
+}
+
+.form-check-label, .form-check-input {
+    margin-left: 10px;
+}
+
+.navigation-buttons .btn {
+    margin-right: 10px;
 }

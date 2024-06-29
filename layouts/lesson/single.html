@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="container mt-5">
+    <div class="row">
+        <nav class="col-md-3 d-md-block bg-light sidebar">
+            {{ partial "shared/sidebar.html" . }}
+        </nav>
+        <main class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <h1>{{ .Title }}</h1>
+            <div class="lesson-description">
+                {{ .Content }}
+            </div>
+
+            {{ if .FirstSection }}
+            <div class="part-body">
+                {{ with .FirstSection }}
+                <h2>{{ .Title }}</h2>
+                {{ .Content }}
+                {{ end }}
+            </div>
+            {{ end }}
+
+            <div class="navigation-buttons mt-4">
+                {{ if .PrevPage }}
+                <a class="btn btn-secondary" href="{{ .PrevPage.Permalink }}">Previous</a>
+                {{ end }}
+                {{ if .NextPage }}
+                <a class="btn btn-primary" href="{{ .NextPage.Permalink }}">Next</a>
+                {{ end }}
+            </div>
+        </main>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="container mt-5">
+    <div class="row">
+        <nav class="col-md-3 d-none d-md-block bg-light sidebar">
+            {{ partial "shared/sidebar.html" . }}
+        </nav>
+        <main class="col-md-9 ml-sm-auto px-4">
+            <h1>{{ .Title }}</h1>
+            <div class="part-body">
+                {{ .Content }}
+            </div>
+            {{ range $sectionIndex, $section := .Params.content_sections }}
+            <section class="content-section mt-4">
+                {{ if eq .type "text" }}
+                <div class="text-content">{{ .content | markdownify }}</div>
+                {{ else if eq .type "code" }}
+                <pre><code class="language-{{ .language }}">{{ .code }}</code></pre>
+                {{ else if eq .type "assessment" }}
+                <h3>{{ .title }}</h3>
+                {{ range $questionIndex, $question := .questions }}
+                <div class="question">
+                    <p>{{ .question }}</p>
+                    {{ if eq .type "multiple-choice" }}
+                    {{ range $optionIndex, $option := .options }}
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q{{ $sectionIndex }}_{{ $questionIndex }}" value="{{ . }}">
+                        <label class="form-check-label">{{ . }}</label>
+                    </div>
+                    {{ end }}
+                    {{ else if eq .type "short-answer" }}
+                    <textarea class="form-control" name="q{{ $sectionIndex }}_{{ $questionIndex }}"></textarea>
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ end }}
+            </section>
+            {{ end }}
+            <nav class="bottom-nav">
+  {{ with .PrevInSection }}
+    <a href="{{ .Permalink }}" class="prev">← {{ .Title }}</a>
+  {{ else }}
+    <a href="{{ .Parent.Permalink }}" class="next">← {{ .Parent.Title }}</a>
+  {{ end }}
+  {{ with .NextInSection }}
+    <a href="{{ .Permalink }}" class="next">{{ .Title }} →</a>
+  {{ else }}
+  <a href="{{ .Parent.Permalink }}" class="prev">← {{ .Parent.Title }}</a>
+  {{ end }}
+</nav>
+        </main>
+    </div>
+</div>
+{{ end }}

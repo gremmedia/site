@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Relative Operators on Grem Media LLC</title>
+    <link>http://localhost:1313/courses/course-1/lessons/lesson-2/</link>
+    <description>Recent content in Relative Operators on Grem Media LLC</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/courses/course-1/lessons/lesson-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Artithmetic Operators</title>
+      <link>http://localhost:1313/courses/course-1/lessons/lesson-2/01-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/courses/course-1/lessons/lesson-2/01-introduction/</guid>
+      <description>Content</description>
+    </item>
+    <item>
+      <title>Addition, Subtraction, Multiplication, and Division</title>
+      <link>http://localhost:1313/courses/course-1/lessons/lesson-2/02-add-subtract-multiply-divide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/courses/course-1/lessons/lesson-2/02-add-subtract-multiply-divide/</guid>
+      <description>Content</description>
+    </item>
+  </channel>
+</rss>

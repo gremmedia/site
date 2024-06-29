@@ -32,94 +32,65 @@ main {
 }
 
 .sidebar {
-    width: var(--sidebar-width);
-    background-color: #fff;
+    background-color: #7C76BB;
+    color: #fff;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 100%;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    line-height: 1.2;
+.sidebar-heading {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.75em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.25em; }
-h6 { font-size: 1em; }
-
-p {
-    margin-bottom: 1.5em;
+#course-content .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 10px 0;
 }
 
-/* Navigation */
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
+#course-content .list-group-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.sidebar ul ul {
+#course-content .list-group-item a:hover {
+    text-decoration: underline;
+}
+
+#course-content .collapse .list-group-item {
+    background-color: #7C76BB;
     padding-left: 20px;
 }
 
-.sidebar a {
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
-    padding: 5px 0;
+#course-content .list-group-item.active {
+    background-color: #4A47A3;
+    color: #fff;
 }
 
-.sidebar a:hover,
-.sidebar .active > a {
-    color: var(--primary-color);
+#course-content .list-group-item.active a {
+    color: #fff;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        order: -1;
-    }
-
-    main {
-        padding: 20px 0;
-    }
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Code blocks */
-pre {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    padding: 10px;
-    overflow-x: auto;
+h1, h2, h3, h5 {
+    color: #7C76BB;
 }
 
-code {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9em;
+.content-section {
+    margin-top: 20px;
 }
 
-/* Accessibility */
-a:focus,
-button:focus {
-    outline: 2px solid var(--primary-color);
+.form-check-label, .form-check-input {
+    margin-left: 10px;
 }
 
-/* Print styles */
-@media print {
-    .sidebar {
-        display: none;
-    }
-
-    main {
-        width: 100%;
-    }
+.navigation-buttons .btn {
+    margin-right: 10px;
 }

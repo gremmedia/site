@@ -8,10 +8,17 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Addition, Subtraction, Multiplication, and Division</title>
-      <link>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/01-add-subtract-multiply-divide/</link>
+      <title>Introduction to Artithmetic Operators</title>
+      <link>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/01-introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/01-add-subtract-multiply-divide/</guid>
+      <guid>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/01-introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Addition, Subtraction, Multiplication, and Division</title>
+      <link>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/02-add-subtract-multiply-divide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/courses/c-expressions-and-operators/01-arithmetic-operations/02-add-subtract-multiply-divide/</guid>
       <description></description>
     </item>
   </channel>
