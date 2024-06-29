@@ -1,36 +1,104 @@
 {{ define "main" }}
-  <section class="section blog-list py-5">
-    <div class="container">
-      <div class="row justify-content-center pb-5">
-        <div class="col-12 col-xl-6">
-          {{ with .Title }}
-            <h2 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
-          {{ end }}
-          {{ with .Params.description }}
-            <p class="text-black-61 text-center pb-3">{{ . }}</p>
-          {{ end }}
-        </div>
-      </div>
-      <div class="row g-4 pb-5">
-        {{ range (.Paginate .RegularPages).Pages }}
-        <div class="col-12 col-md-6 col-lg-4">
-          <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
-            <div class="aspect-ratio-62-5">
-              {{ with ( partial "utilities/get-featured-image.html" . ) }}
-                {{ partial "utilities/card-img-top" . }}
-              {{ end }}
-            </div>
-            <div class="card-body">
-              <h5 class="card-title fw-semibold">{{ .Title }}</h5>
-              <p class="card-text text-black-61">{{ .Summary | plainify }}</p>
-            </div>
-          </a>
-        </div>
+<section class="section blog-list py-3">
+  <div class="container">
+    <div class="row justify-content-center pb-2">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h1 class="fw-bold text-right text-primary">{{ .Title }}</h1>
+        {{ with .Params.description }}
+          <p class="h2 text-center">{{ . }}</p>
         {{ end }}
       </div>
-      <div class="row pb-5">
+    </div>
+    
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        {{ range (.Paginate .RegularPages).Pages }}
+        <article class="blog-post mb-4 position-relative overflow-hidden">
+          <div class="blog-post-content p-4">
+            <h2 class="h3 fw-bold mb-3">
+              <a href="{{ .Permalink }}" class="text-decoration-none text-dark hover-primary">{{ .Title }}</a>
+            </h2>
+            <p class="text-muted mb-3"><i class="fas fa-calendar-alt me-2"></i>{{ .Date.Format "January 2, 2006" }}</p>
+            <p class="mb-3">{{ .Description | plainify | truncate 150 }}</p>
+            <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+    
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center">
         {{ template "_internal/pagination.html" . }}
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+  :root {
+    --primary-color: #7E6BC4;
+    --primary-light: #F0EBFF;
+    --bg-color: #FAFAFA;
+  }
+  body {
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+  }
+  .text-primary, .btn-primary, .page-item.active .page-link {
+    color: var(--primary-color) !important;
+  }
+  .btn-primary, .page-item.active .page-link {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+  }
+  .btn-primary {
+    color: white !important;
+    transition: all 0.3s ease;
+  }
+  .btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%) !important;
+    transform: translateY(-2px);
+  }
+  .hover-primary:hover {
+    color: var(--primary-color) !important;
+  }
+  .blog-post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-top: 4px solid var(--primary-color);
+  }
+  .blog-post:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .blog-post-content {
+    position: relative;
+    z-index: 1;
+  }
+  .blog-post::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--primary-light) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .blog-post:hover::before {
+    opacity: 1;
+  }
+  .pagination .page-link {
+    color: var(--primary-color);
+    border-radius: 4px;
+    margin: 0 2px;
+  }
+  .pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+</style>
 {{ end }}

@@ -6,7 +6,7 @@
     <description>Recent content on Grem Media LLC</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
@@ -16,32 +16,32 @@
       <description> </description>
     </item>
     <item>
-      <title>Rich Content</title>
-      <link>http://localhost:1313/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+      <title>Welcome to Grem Media</title>
+      <link>http://localhost:1313/post/welcome-copy-2/</link>
+      <pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/welcome-copy-2/</guid>
+      <description>Welcome to Grem Media LLC! Hello and welcome to the Grem Media LLC blog!&#xA;At Grem Media, we specialize in creating engaging and comprehensive online courses.</description>
     </item>
     <item>
-      <title>Placeholder Text</title>
-      <link>http://localhost:1313/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      <title>Welcome to Grem Media</title>
+      <link>http://localhost:1313/post/welcome-copy-3/</link>
+      <pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/welcome-copy-3/</guid>
+      <description>Welcome to Grem Media LLC! Hello and welcome to the Grem Media LLC blog!&#xA;At Grem Media, we specialize in creating engaging and comprehensive online courses.</description>
     </item>
     <item>
-      <title>Math Typesetting</title>
-      <link>http://localhost:1313/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+      <title>Welcome to Grem Media</title>
+      <link>http://localhost:1313/post/welcome-copy/</link>
+      <pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/welcome-copy/</guid>
+      <description>Welcome to Grem Media LLC! Hello and welcome to the Grem Media LLC blog!&#xA;At Grem Media, we specialize in creating engaging and comprehensive online courses.</description>
     </item>
     <item>
-      <title>Emoji Support</title>
-      <link>http://localhost:1313/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <title>Welcome to Grem Media</title>
+      <link>http://localhost:1313/post/welcome/</link>
+      <pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/welcome/</guid>
+      <description>Welcome to Grem Media LLC! Hello and welcome to the Grem Media LLC blog!&#xA;At Grem Media, we specialize in creating engaging and comprehensive online courses.</description>
     </item>
   </channel>
 </rss>
